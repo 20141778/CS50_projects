@@ -1,4 +1,4 @@
-#brand {
+#brand, .row p {
   font-family: 'papyrus','fantasy';
   font-weight: 950;
 }
@@ -59,7 +59,12 @@ nav > ul > li {
 
 .row {
   margin-top: 10%;
-  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.row p {
+  color: white;
+  font-size: 75px;
 }
 
 h1 {

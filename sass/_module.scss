@@ -3,7 +3,7 @@
 @mixin Paragraph($TextColor,$TextSize) {
     @extend %brand;
     color: $TextColor;
-    font-size: 75px;
+    font-size: $TextSize;
 }
 
 @mixin General ($TextColor,$TextBg,$LinkBg){

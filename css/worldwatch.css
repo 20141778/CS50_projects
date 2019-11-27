@@ -1,4 +1,4 @@
-#brand, .row .col-md-5 p {
+#brand, .row div p, .row div p span {
   font-family: 'papyrus','fantasy';
   font-weight: 950;
 }
@@ -9,11 +9,11 @@ body {
 }
 
 nav .logo:hover a svg .svgPath2 {
-  fill: black;
+  fill: white;
 }
 
 nav .logo:hover #brand {
-  color: black;
+  color: white;
 }
 
 nav > ul > li {
@@ -24,11 +24,11 @@ nav > ul > li {
 .LinkBg {
   border-radius: 50% 0% 50% 0%;
   background-color: blue;
-  color: black;
+  color: white;
 }
 
 .LinkBg:hover {
-  background-color: black;
+  background-color: white;
   color: blue;
 }
 
@@ -49,8 +49,8 @@ nav > ul > li {
 }
 
 .txt-link:hover {
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 
 #brand {
@@ -58,12 +58,20 @@ nav > ul > li {
 }
 
 .row {
-  margin-top: 10%;
-  margin-left: 2%;
+  margin-top: 7%;
 }
 
-.row .col-md-5 p {
+.row div p {
   color: blue;
   font-size: 75px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.row div p span {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
 }
 /*# sourceMappingURL=worldwatch.css.map */

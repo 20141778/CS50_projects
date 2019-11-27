@@ -3,18 +3,24 @@
 
 // Main variables colors
 $TextColor: blue;
-$TextBg: black;
+$TextBg: white;
 $LinkBg: blue;
 $TextSize: 75px;
-$margin-top: 10%;
+$TextSize2: 40px;
+$margin-top: 7%;
 
 @include General($TextColor,$TextBg,$LinkBg);
 .row{ 
     margin-top: $margin-top; 
-    margin-left: 2%;
-    .col-md-5 {
+    // margin-right: 2%;
+    div {
         p {
             @include Paragraph ($TextColor,$TextSize);
+            justify-content: end;
+            span {
+                @include Paragraph ($TextBg,$TextSize2);
+                font-style: italic;
+            }
         }
     }
 }

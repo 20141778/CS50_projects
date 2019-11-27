@@ -3,6 +3,7 @@
 
 // Main variables colors
 $TextColor: red;
+$TextColor2: white;
 $TextBg: #00cc00;
 $LinkBg: red;
 $TextSize: 75px;
@@ -11,7 +12,10 @@ $margin-top: 10%;
 @include General($TextColor,$TextBg,$LinkBg);
 .row{ 
     margin-top: $margin-top;
-    margin-right: 2%;
+    margin-left: 2%;
+    p {
+            @include Paragraph ($TextColor2,$TextSize);
+        }
 }
 h1 {
     color: $TextColor;

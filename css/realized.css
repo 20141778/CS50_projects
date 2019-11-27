@@ -1,4 +1,4 @@
-#brand, .row .col-md-5 p {
+#brand {
   font-family: 'papyrus','fantasy';
   font-weight: 950;
 }
@@ -60,10 +60,5 @@ nav > ul > li {
 .row {
   margin-top: 10%;
   margin-left: 2%;
-}
-
-.row .col-md-5 p {
-  color: white;
-  font-size: 75px;
 }
 /*# sourceMappingURL=realized.css.map */
