@@ -1,0 +1,18 @@
+
+@import 'module';
+
+// Main variables colors
+$TextColor: #ff6404;
+$TextBg: #804000;
+$LinkBg: #ff6404;
+$TextSize: 75px;
+$margin-top: 10%;
+
+@include General($TextColor,$TextBg,$LinkBg);
+.row{ 
+    margin-top: $margin-top;
+    margin-right: 2%;
+}
+h1 {
+    color: $TextColor;
+}

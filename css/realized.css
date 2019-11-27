@@ -1,0 +1,69 @@
+#brand, .row .col-md-5 p {
+  font-family: 'papyrus','fantasy';
+  font-weight: 950;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav .logo:hover a svg .svgPath2 {
+  fill: black;
+}
+
+nav .logo:hover #brand {
+  color: black;
+}
+
+nav > ul > li {
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
+
+.LinkBg {
+  border-radius: 50% 0% 50% 0%;
+  background-color: white;
+  color: black;
+}
+
+.LinkBg:hover {
+  background-color: black;
+  color: white;
+}
+
+.svgPath2 {
+  fill: white;
+}
+
+.svgPath3 {
+  fill: black;
+  fill-rule: evenodd;
+  opacity: 0.2;
+}
+
+.txt-link {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50% 0% 50% 0%;
+}
+
+.txt-link:hover {
+  color: black;
+  border-color: black;
+}
+
+#brand {
+  color: white;
+}
+
+.row {
+  margin-top: 10%;
+  margin-left: 2%;
+}
+
+.row .col-md-5 p {
+  color: white;
+  font-size: 75px;
+}
+/*# sourceMappingURL=realized.css.map */

@@ -1,0 +1,68 @@
+#brand {
+  font-family: 'papyrus','fantasy';
+  font-weight: 950;
+}
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav .logo:hover a svg .svgPath2 {
+  fill: #00cc00;
+}
+
+nav .logo:hover #brand {
+  color: #00cc00;
+}
+
+nav > ul > li {
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+}
+
+.LinkBg {
+  border-radius: 50% 0% 50% 0%;
+  background-color: red;
+  color: #00cc00;
+}
+
+.LinkBg:hover {
+  background-color: #00cc00;
+  color: red;
+}
+
+.svgPath2 {
+  fill: red;
+}
+
+.svgPath3 {
+  fill: black;
+  fill-rule: evenodd;
+  opacity: 0.2;
+}
+
+.txt-link {
+  color: red;
+  border: 1px solid red;
+  border-radius: 50% 0% 50% 0%;
+}
+
+.txt-link:hover {
+  color: #00cc00;
+  border-color: #00cc00;
+}
+
+#brand {
+  color: red;
+}
+
+.row {
+  margin-top: 10%;
+  margin-right: 2%;
+}
+
+h1 {
+  color: red;
+}
+/*# sourceMappingURL=mydream.css.map */

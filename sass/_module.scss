@@ -1,0 +1,76 @@
+
+
+@mixin Paragraph($TextColor,$TextSize) {
+    @extend %brand;
+    color: $TextColor;
+    font-size: 75px;
+}
+
+@mixin General ($TextColor,$TextBg,$LinkBg){
+$borderR: 50% 0% 50% 0%;
+
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    nav { 
+        .logo:hover{
+            a {
+                svg {
+                    .svgPath2 {
+                        fill: $TextBg;
+                    }
+
+                }
+            }
+            #brand {
+                color: $TextBg;
+            }
+
+        }
+    }
+    nav > ul > li {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+    }
+    .LinkBg {
+        border-radius: $borderR;
+        background-color: $LinkBg;
+        color: $TextBg;
+
+        &:hover{
+            background-color: $TextBg;
+        color: $LinkBg;
+        }
+    }
+
+    .svgPath2 {
+        fill: $TextColor;
+    }
+    .svgPath3 {
+        fill: black;
+        fill-rule:evenodd;
+        opacity:0.2;
+    }
+    .txt-link {
+        color: $LinkBg;
+        border: 1px solid $LinkBg;
+        border-radius: $borderR;
+        &:hover{
+            color: $TextBg;
+            border-color: $TextBg;
+        }
+    }
+
+    #brand {
+        @extend %brand;
+        color: $TextColor;
+    }
+
+}
+ 
+
+%brand {
+    font-family: 'papyrus','fantasy';
+    font-weight: 950;
+}
