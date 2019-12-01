@@ -16,22 +16,6 @@ nav .logo:hover #brand {
   color: #00cc00;
 }
 
-nav > ul > li {
-  padding-left: 0.9em;
-  padding-right: 0.9em;
-}
-
-.LinkBg {
-  border-radius: 50% 0% 50% 0%;
-  background-color: red;
-  color: #00cc00;
-}
-
-.LinkBg:hover {
-  background-color: #00cc00;
-  color: red;
-}
-
 .svgPath2 {
   fill: red;
 }
@@ -42,19 +26,132 @@ nav > ul > li {
   opacity: 0.2;
 }
 
-.txt-link {
-  color: red;
-  border: 1px solid red;
-  border-radius: 50% 0% 50% 0%;
-}
-
-.txt-link:hover {
-  color: #00cc00;
-  border-color: #00cc00;
-}
-
 #brand {
   color: red;
+}
+
+@media (min-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: red;
+    color: #00cc00;
+  }
+  .LinkBg:hover {
+    background-color: #00cc00;
+    color: red;
+  }
+  .txt-link {
+    color: red;
+    border: 1px solid red;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: #00cc00;
+    border-color: #00cc00;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: red;
+    color: #00cc00;
+  }
+  .LinkBg:hover {
+    background-color: #00cc00;
+    color: red;
+  }
+  .txt-link {
+    color: red;
+    border: 1px solid red;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: #00cc00;
+    border-color: #00cc00;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: red;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: red;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: red;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: red;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: red;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: red;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
 }
 
 .row {
@@ -65,6 +162,18 @@ nav > ul > li {
 .row p {
   color: white;
   font-size: 75px;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .row p {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row p {
+    font-size: 45px;
+  }
 }
 
 h1 {

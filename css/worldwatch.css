@@ -16,22 +16,6 @@ nav .logo:hover #brand {
   color: white;
 }
 
-nav > ul > li {
-  padding-left: 0.9em;
-  padding-right: 0.9em;
-}
-
-.LinkBg {
-  border-radius: 50% 0% 50% 0%;
-  background-color: blue;
-  color: white;
-}
-
-.LinkBg:hover {
-  background-color: white;
-  color: blue;
-}
-
 .svgPath2 {
   fill: blue;
 }
@@ -42,19 +26,132 @@ nav > ul > li {
   opacity: 0.2;
 }
 
-.txt-link {
-  color: blue;
-  border: 1px solid blue;
-  border-radius: 50% 0% 50% 0%;
-}
-
-.txt-link:hover {
-  color: white;
-  border-color: white;
-}
-
 #brand {
   color: blue;
+}
+
+@media (min-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: blue;
+    color: white;
+  }
+  .LinkBg:hover {
+    background-color: white;
+    color: blue;
+  }
+  .txt-link {
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: white;
+    border-color: white;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: blue;
+    color: white;
+  }
+  .LinkBg:hover {
+    background-color: white;
+    color: blue;
+  }
+  .txt-link {
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: white;
+    border-color: white;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: blue;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
 }
 
 .row {
@@ -69,9 +166,33 @@ nav > ul > li {
           justify-content: end;
 }
 
+@media (min-width: 767px) and (max-width: 1023px) {
+  .row div p {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row div p {
+    font-size: 45px;
+  }
+}
+
 .row div p span {
   color: white;
   font-size: 40px;
   font-style: italic;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .row div p span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row div p span {
+    font-size: 24px;
+  }
 }
 /*# sourceMappingURL=worldwatch.css.map */

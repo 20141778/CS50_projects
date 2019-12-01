@@ -16,22 +16,6 @@ nav .logo:hover #brand {
   color: black;
 }
 
-nav > ul > li {
-  padding-left: 0.9em;
-  padding-right: 0.9em;
-}
-
-.LinkBg {
-  border-radius: 50% 0% 50% 0%;
-  background-color: white;
-  color: black;
-}
-
-.LinkBg:hover {
-  background-color: black;
-  color: white;
-}
-
 .svgPath2 {
   fill: white;
 }
@@ -42,19 +26,132 @@ nav > ul > li {
   opacity: 0.2;
 }
 
-.txt-link {
-  color: white;
-  border: 1px solid white;
-  border-radius: 50% 0% 50% 0%;
-}
-
-.txt-link:hover {
-  color: black;
-  border-color: black;
-}
-
 #brand {
   color: white;
+}
+
+@media (min-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: white;
+    color: black;
+  }
+  .LinkBg:hover {
+    background-color: black;
+    color: white;
+  }
+  .txt-link {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: black;
+    border-color: black;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: white;
+    color: black;
+  }
+  .LinkBg:hover {
+    background-color: black;
+    color: white;
+  }
+  .txt-link {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: black;
+    border-color: black;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
 }
 
 .row {
@@ -64,6 +161,18 @@ nav > ul > li {
 
 .row .col-md-5 p {
   color: white;
-  font-size: 75px;
+  font-size: 4.5em;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .row .col-md-5 p {
+    font-size: 2.7em;
+  }
+}
+
+@media (max-width: 767px) {
+  .row .col-md-5 p {
+    font-size: 2.7em;
+  }
 }
 /*# sourceMappingURL=index.css.map */

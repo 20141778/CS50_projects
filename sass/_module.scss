@@ -1,9 +1,29 @@
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
 
+@mixin media($media) {
+    @if $media == xs {
+        @media (max-width: $breakpoint-sm) { @content; }
+    }
+    @else if $media == sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+    }
+    @else if $media == md {
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+    }
+    @else if $media == lg {
+        @media (min-width: $breakpoint-lg) { @content; }
+    }
+}
 
 @mixin Paragraph($TextColor,$TextSize) {
     @extend %brand;
     color: $TextColor;
     font-size: $TextSize;
+    @include media(sm){ font-size: $TextSize *(60/100); }
+    @include media(xs){ font-size: $TextSize *(60/100); }
 }
 
 @mixin General ($TextColor,$TextBg,$LinkBg){
@@ -29,20 +49,6 @@ $borderR: 50% 0% 50% 0%;
 
         }
     }
-    nav > ul > li {
-        padding-left: 0.9em;
-        padding-right: 0.9em;
-    }
-    .LinkBg {
-        border-radius: $borderR;
-        background-color: $LinkBg;
-        color: $TextBg;
-
-        &:hover{
-            background-color: $TextBg;
-        color: $LinkBg;
-        }
-    }
 
     .svgPath2 {
         fill: $TextColor;
@@ -51,6 +57,80 @@ $borderR: 50% 0% 50% 0%;
         fill: black;
         fill-rule:evenodd;
         opacity:0.2;
+    }
+
+    #brand {
+        @extend %brand;
+        color: $TextColor;
+    }
+    @include media(lg){ @include li($borderR,$LinkBg,$TextBg);footer{display: none;} }
+    @include media(md){ @include li($borderR,$LinkBg,$TextBg);footer{display: none;} }
+    @include media(sm){ 
+        nav>ul,.nav-link{ display:none; }
+        #menu-icon {
+            @include bar-menu($TextColor);
+            
+        }
+        footer{display:block}
+    }
+    @include media(xs){ 
+        nav>ul,.nav-link{ display:none; } 
+        #menu-icon {
+            @include bar-menu($TextColor);
+            
+        }
+        footer{display:block}
+    }
+
+}
+@mixin bar-menu($color-menu){
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: $color-menu;
+    margin: 9px 0;
+    &::before{
+        content:"";
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background-color: $color-menu;
+        margin: 9px 0;
+        top:0;
+    }
+    
+    &::after{
+        content:"";
+        position: absolute;
+        width: 35px;
+        height: 3px;
+        background-color: $color-menu;
+        margin: 9px 0;
+        bottom:0;
+    }
+} 
+
+%brand {
+    font-family: 'papyrus','fantasy';
+    font-weight: 950;
+}
+
+@mixin li ($borderR,$LinkBg,$TextBg) {
+    
+    nav > ul > li {
+        padding-left: 0.9em;
+        padding-right: 0.9em;
+    }
+    
+    .LinkBg {
+        border-radius: $borderR;
+        background-color: $LinkBg;
+        color: $TextBg;
+        
+        &:hover{
+            background-color: $TextBg;
+            color: $LinkBg;
+        }
     }
     .txt-link {
         color: $LinkBg;
@@ -61,16 +141,6 @@ $borderR: 50% 0% 50% 0%;
             border-color: $TextBg;
         }
     }
-
-    #brand {
-        @extend %brand;
-        color: $TextColor;
-    }
-
 }
- 
+    
 
-%brand {
-    font-family: 'papyrus','fantasy';
-    font-weight: 950;
-}

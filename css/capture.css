@@ -16,22 +16,6 @@ nav .logo:hover #brand {
   color: #804000;
 }
 
-nav > ul > li {
-  padding-left: 0.9em;
-  padding-right: 0.9em;
-}
-
-.LinkBg {
-  border-radius: 50% 0% 50% 0%;
-  background-color: #ff6404;
-  color: #804000;
-}
-
-.LinkBg:hover {
-  background-color: #804000;
-  color: #ff6404;
-}
-
 .svgPath2 {
   fill: #ff6404;
 }
@@ -42,19 +26,132 @@ nav > ul > li {
   opacity: 0.2;
 }
 
-.txt-link {
-  color: #ff6404;
-  border: 1px solid #ff6404;
-  border-radius: 50% 0% 50% 0%;
-}
-
-.txt-link:hover {
-  color: #804000;
-  border-color: #804000;
-}
-
 #brand {
   color: #ff6404;
+}
+
+@media (min-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: #ff6404;
+    color: #804000;
+  }
+  .LinkBg:hover {
+    background-color: #804000;
+    color: #ff6404;
+  }
+  .txt-link {
+    color: #ff6404;
+    border: 1px solid #ff6404;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: #804000;
+    border-color: #804000;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  nav > ul > li {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+  .LinkBg {
+    border-radius: 50% 0% 50% 0%;
+    background-color: #ff6404;
+    color: #804000;
+  }
+  .LinkBg:hover {
+    background-color: #804000;
+    color: #ff6404;
+  }
+  .txt-link {
+    color: #ff6404;
+    border: 1px solid #ff6404;
+    border-radius: 50% 0% 50% 0%;
+  }
+  .txt-link:hover {
+    color: #804000;
+    border-color: #804000;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: #ff6404;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #ff6404;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #ff6404;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  nav > ul, .nav-link {
+    display: none;
+  }
+  #menu-icon {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background-color: #ff6404;
+    margin: 9px 0;
+  }
+  #menu-icon::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #ff6404;
+    margin: 9px 0;
+    top: 0;
+  }
+  #menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    background-color: #ff6404;
+    margin: 9px 0;
+    bottom: 0;
+  }
+  footer {
+    display: block;
+  }
 }
 
 .row {
