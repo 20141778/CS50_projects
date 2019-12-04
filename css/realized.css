@@ -3,9 +3,33 @@
   font-weight: 950;
 }
 
+*::-moz-selection {
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px 4px white;
+}
+
+*::selection {
+  background-color: black;
+  color: white;
+  text-shadow: 2px 2px 4px white;
+}
+
 body {
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  body {
+    background-repeat: repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    background-repeat: repeat;
+  }
 }
 
 nav .logo:hover a svg .svgPath2 {

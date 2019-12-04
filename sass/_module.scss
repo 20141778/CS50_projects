@@ -27,11 +27,17 @@ $breakpoint-lg: 1360px;
 }
 
 @mixin General ($TextColor,$TextBg,$LinkBg){
-$borderR: 50% 0% 50% 0%;
-
+    $borderR: 50% 0% 50% 0%;
+    *::selection{
+        background-color: $TextBg;// hsla(150, 2%, 16%, 1);
+        color:$LinkBg;
+        text-shadow: 2px 2px 4px $LinkBg;
+    }
     body {
         background-size: cover;
         background-repeat: no-repeat;
+        @include media(sm){background-repeat: repeat;}
+        @include media(xs){background-repeat: repeat;}
     }
     nav { 
         .logo:hover{
