@@ -33,11 +33,24 @@ $breakpoint-lg: 1360px;
         color:$LinkBg;
         text-shadow: 2px 2px 4px $LinkBg;
     }
+    #loading{
+            display:block;
+            background-color: rgba($LinkBg, 0.95);
+            width: 100%;
+            height: 100%;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index: 10;
+            text-align: center;
+            padding-top:21%;
+            @include Paragraph($TextBg,3.5em);
+    }
     body {
         background-size: cover;
         background-repeat: no-repeat;
-        @include media(sm){background-repeat: repeat;}
-        @include media(xs){background-repeat: repeat;}
+        @include media(sm){background-repeat: repeat;background-size: contain;}
+        @include media(xs){background-repeat: repeat;background-size: contain;}
     }
     nav { 
         .logo:hover{
@@ -69,15 +82,21 @@ $breakpoint-lg: 1360px;
         @extend %brand;
         color: $TextColor;
     }
-    @include media(lg){ @include li($borderR,$LinkBg,$TextBg);footer{display: none;} }
-    @include media(md){ @include li($borderR,$LinkBg,$TextBg);footer{display: none;} }
+    @include media(lg){ @include li($borderR,$LinkBg,$TextBg);#navigation{display: none;} }
+    @include media(md){ @include li($borderR,$LinkBg,$TextBg);#navigation{display: none;}}
     @include media(sm){ 
         nav>ul,.nav-link{ display:none; }
         #menu-icon {
             @include bar-menu($TextColor);
             
         }
-        footer{display:block}
+        #navigation{
+            display:flex;
+            justify-content: space-around;
+            a{background-color: $TextBg;color:$LinkBg;;}
+            
+        }
+            
     }
     @include media(xs){ 
         nav>ul,.nav-link{ display:none; } 
@@ -85,7 +104,13 @@ $breakpoint-lg: 1360px;
             @include bar-menu($TextColor);
             
         }
-        footer{display:block}
+        #navigation{
+            display:flex;
+            justify-content: space-around;
+            a{background-color: $TextBg;color:$LinkBg;}
+            
+        }
+
     }
 
 }
