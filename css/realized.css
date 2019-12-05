@@ -1,4 +1,4 @@
-#loading, #brand {
+#brand {
   font-family: 'papyrus','fantasy';
   font-weight: 950;
 }
@@ -13,33 +13,6 @@
   background-color: black;
   color: white;
   text-shadow: 2px 2px 4px white;
-}
-
-#loading {
-  display: block;
-  background-color: rgba(255, 255, 255, 0.95);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  text-align: center;
-  padding-top: 21%;
-  color: black;
-  font-size: 3.5em;
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  #loading {
-    font-size: 2.1em;
-  }
-}
-
-@media (max-width: 767px) {
-  #loading {
-    font-size: 2.1em;
-  }
 }
 
 body {
