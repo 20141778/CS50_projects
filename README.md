@@ -33,16 +33,16 @@ Languages ​​and frameworks used:
 2. [capture.html](capture.html)
     - element h1
     - bootstrap style table
-3. [worldwatch.html] (worldwatch.html)
+3. [worldwatch.html](worldwatch.html)
     - Pss element with css style
     - css style span element
-4. [realized.html] (realized.html)
+4. [realized.html](realized.html)
     - Pss element with css style
     - ul> li * 4 elements with css style
-5. [mydream.html] (mydream.html)
+5. [mydream.html](mydream.html)
     - element h1
     - Pss element with css style
-6. [bootstrap] (bootstrap \ bootstrap.min.css)
+6. [bootstrap](bootstrap\bootstrap.min.css)
 
 - Requirements:
     - [x] at least 4 .html files
